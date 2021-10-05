@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CLIENT</title>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="scriptClient.js"></script>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<h1>CLIENT</h1>
+		<div class="form">
+			<input type="number" id="miId" placeholder="Id">
+			<input type="text" id="name" placeholder="name">
+			<input type="text" id="email" placeholder="email">
+			<input type="number" id="age" placeholder="age">
+
+			<div>
+				<button onclick="guardarInformacion()" class="button">Guardar</button>
+				<button onclick="visualizar()" class="button">Consultar</button>
+				<button onclick="editarInformacion()" class="button">Actualizar</button>
+				<button onclick="location.href='index.html'">Volver</button>
+			</div>
+		</div>
+
+		<div>
+			<h1>Datos</h1>
+			<table class="resultado">
+				<thead>
+					<tr>
+						<th>name</th>
+						<th>email</th>
+						<th>age</th>
+					</tr>
+				</thead>
+				<tbody id="resultado">	
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
